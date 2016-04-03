@@ -2,7 +2,10 @@
 package ohtu.verkkokauppa;
 
 import java.util.ArrayList;
+import org.springframework.stereotype.Component;
 
+
+@Component
 public class Kirjanpito {
     /*
     private static Kirjanpito instance;
