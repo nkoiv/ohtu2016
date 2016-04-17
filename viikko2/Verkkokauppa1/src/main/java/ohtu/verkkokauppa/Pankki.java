@@ -1,7 +1,7 @@
 package ohtu.verkkokauppa;
 
 public class Pankki {
-    /*
+
     private static Pankki instanssi;
 
     public static Pankki getInstance() {
@@ -11,11 +11,10 @@ public class Pankki {
 
         return instanssi;
     }
-    */
     private Kirjanpito kirjanpito;
 
-    public Pankki(Kirjanpito kirjanpito) {
-        this.kirjanpito = kirjanpito;
+    public Pankki() {
+        kirjanpito = Kirjanpito.getInstance();
     }
 
     public boolean tilisiirto(String nimi, int viitenumero, String tililta, String tilille, int summa) {
